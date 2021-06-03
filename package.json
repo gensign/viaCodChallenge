@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "ava --verbose 'test/*.test.js'"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0"
+  },
+  "eslintConfig": {}
+}
