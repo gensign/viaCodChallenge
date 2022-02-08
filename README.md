@@ -31,9 +31,14 @@ and add test cases to help us understand the change. If the instructions
 are not clear then feel free to make some assumptions but provide
 documentation on why you made these assumptions.
 
-While optimizing the solution is not the main focus, please feel
-free to document any optimizations that you made or thought about
-during the course of this exercise.
+## Bonus Points
+While optimizing the solution is not the main focus, please feel free to identify any anti-patterns observed or optimizations needed. 
+
+Feel free to call out, or preferrably change, any packages, coding styles, or naming conventions changed.
+
+If this were an application you were using for a project make the changes that would improve it and document any changes here in the readme file under the "Changes Section"
+
+## Changes
 
 ## Submitting
 
