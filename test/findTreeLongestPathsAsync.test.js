@@ -10,14 +10,11 @@ const tree3 = loadTree(require('./data/tree3.json'));
 
 test('find longest tree paths for tree0', async (t) => {
   const longestPaths = await findTreeLongestPathsAsync(tree0);
-  // There is only one longest path and the only node in that path is the root node
   longestPaths.length === 1 && longestPaths[0][0].data.label === "tree0" && t.pass()
 });
 
 test('find longest tree paths for tree1', async (t) => {
   const longestPaths = await findTreeLongestPathsAsync(tree1);
-  // There are two paths with the same length
-  // if we map out the data strings of each node in the paths it will be as follows:
   const predictedPathOne = [
     "tree1",
     "tree1.b",
@@ -74,8 +71,6 @@ test('find longest tree paths for tree1', async (t) => {
 
 test('find longest tree paths for tree2', async (t) => {
   const longestPaths = await findTreeLongestPathsAsync(tree2);
-  // There is only one longest path
-  // if we map out the data strings of each node in the path it will be as follows:
   const predictedPath = [
     "tree1",
     "tree2.b",
@@ -115,8 +110,6 @@ test('find longest tree paths for tree2', async (t) => {
 
 test('find longest tree paths for tree3', async (t) => {
   const longestPaths = await findTreeLongestPathsAsync(tree3);
-  // There are four longest paths
-  // if we map out the data strings of each node in the paths it will be as follows:
   const predictedPathOne = [
     "tree3",
     "tree3.b",
@@ -200,5 +193,3 @@ test('find longest tree paths for tree3', async (t) => {
   isMatching &&
   t.pass()
 });
-
-

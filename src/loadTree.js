@@ -6,8 +6,7 @@
  * @param  {Object} obj an object that stores tree data
  * @return {TreeNode} the root `TreeNode`
  */
-
-const TreeNode = require("./TreeNode");
+import TreeNode from "./TreeNode";
 
 module.exports = function loadTree(obj) {
   const rootNode = new TreeNode(null, {
@@ -15,7 +14,7 @@ module.exports = function loadTree(obj) {
     depth: 0,
     childArray: obj.children
   });
-  const recursiveLoad = (parent, childArray) => {
+  function recursiveLoad(parent, childArray){
     if (!childArray){
       return;
     }
