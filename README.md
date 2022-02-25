@@ -39,6 +39,8 @@ Feel free to call out, or preferrably change, any packages, coding styles, or na
 If this were an application you were using for a project make the changes that would improve it and document any changes here in the readme file under the "Changes Section"
 
 ## Changes
+Minor change to the TreeNode.js on lines 52 and 53
+
 
 ## Submitting
 

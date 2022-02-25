@@ -10,7 +10,8 @@ module.exports = class TreeNode {
   constructor (parent, data) {
     this.parent = parent;
     this.data = data;
-    this.children = undefined;
+    // defined the children as an array
+    this.children = [];
   }
 
   /**
@@ -47,7 +48,8 @@ module.exports = class TreeNode {
    * Appends a child to this tree node
    * @param  {TreeNode} node a tree node
    */
-  setChildren (children) {
-    this.children = children || [];
+  // changed the code here to more easily use node as node is stated above
+  setChildren (node) {
+    this.children.push(node);
   }
 };
